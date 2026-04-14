@@ -1,0 +1,593 @@
+/* --- CONFIGURACIÓN DE FONDO Y CUERPO --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    background-image: url('img/Fondo.jpeg'); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* CAPA DE COLOR SOBRE EL FONDO */
+.fondo-con-opacidad {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0, 56, 168, 0.5) 100%);
+    z-index: -1;
+}
+
+/* --- ESTILOS DEL ENCABEZADO --- */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 3px solid #ce1126;
+}
+
+.titulo-majestuoso {
+    font-size: 5rem;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 15px;
+    text-shadow: 
+        0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
+        0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1),
+        0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3),
+        0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25),
+        0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #0038a8;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+/* --- MENÚ DE NAVEGACIÓN  --- */
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    text-align: center;
+    position: sticky; top: 0; z-index: 100;
+}
+
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav ul li { display: inline; margin: 0 15px; }
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+nav a:hover {
+    background-color: #ce1126;
+    color: white;
+    box-shadow: 0 0 15px rgba(206, 17, 38, 0.7);
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* --- ESTILO DE CAJAS CRISTAL  --- */
+.tarjeta-cristal {
+    background: rgba(255, 255, 255, 0.1);
+    width: 70%;
+    margin: 60px auto;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+
+.tarjeta-cristal:hover {
+    transform: translateY(-10px);
+}
+
+.materia {
+    color: #ce1126;
+    font-weight: bold;
+}
+
+/* --- PIE DE PÁGINA  --- */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 0.9rem;
+}
+
+/* --- REPETICIÓN DE CONFIGURACIÓN GLOBAL  --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('img/Fondo.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* SEGUNDA CAPA DE TRANSPARENCIA  --- */
+.capa-transparencia {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(0, 56, 168, 0.7) 0%, rgba(206, 17, 38, 0.6) 100%);
+    z-index: -1;
+}
+
+/* --- ENCABEZADO SECUNDARIO  --- */
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.titulo-majestuoso {
+    font-size: 4.5rem;
+    margin: 0;
+    letter-spacing: 10px;
+    text-shadow: 0px 5px 15px rgba(0,0,0,0.8);
+    color: #fff;
+}
+
+.subtitulo-premium {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    border-top: 2px solid #fff;
+    display: inline-block;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* --- MENÚ SECUNDARIO  --- */
+nav {
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    padding: 15px;
+    position: sticky; top: 0; z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover, .link-activo {
+    color: #ce1126;
+    border-bottom: 2px solid #ce1126;
+}
+
+/* --- SECCIÓN DE CLASES  --- */
+.contenedor-clases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 5%;
+}
+
+.tarjeta-clase-pro {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: all 0.5s ease;
+}
+
+.tarjeta-clase-pro:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ce1126;
+}
+
+.tarjeta-clase-pro h2 {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    margin-top: 0;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.tarjeta-clase-pro p {
+    line-height: 1.7;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* PIE DE PÁGINA  */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.8);
+}
+
+/* --- SECCIÓN DE PROFESORES  --- */
+.contenedor-profesores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-docente {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    width: 350px;
+    padding: 40px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.tarjeta-docente:hover {
+    transform: translateY(-20px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #ce1126;
+}
+
+/* FOTOS DE LOS PROFESORES */
+.marco-foto {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    transition: 0.5s;
+}
+
+.tarjeta-docente:hover .marco-foto {
+    border-color: #0038a8;
+    transform: scale(1.1);
+}
+
+.marco-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-profe h3 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.etiqueta-cargo {
+    background: #ce1126;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.info-profe p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #f0f0f0;
+}
+
+/* --- SECCIÓN DE FORMULARIO (Página de Contacto) --- */
+.caja-cristal-contacto {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    width: 60%;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+.formulario-pro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.grupo-input label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.grupo-input input, 
+.grupo-input select, 
+.grupo-input textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+.grupo-input input:focus, 
+.grupo-input textarea:focus {
+    border-color: #ce1126;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(206, 17, 38, 0.5);
+}
+
+.boton-enviar {
+    background: #ce1126;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+.boton-enviar:hover {
+    background: #0038a8;
+    box-shadow: 0 0 20px rgba(0, 56, 168, 0.8);
+    transform: scale(1.02);
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* --- SECCIÓN DE REDES SOCIALES (Enlaces externos) --- */
+.contenedor-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tarjeta-red {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.tarjeta-red i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+}
+
+.facebook { background: rgba(24, 119, 242, 0.3); }
+.facebook:hover { background: #1877f2; box-shadow: 0 0 20px #1877f2; }
+
+.whatsapp { background: rgba(37, 211, 102, 0.3); }
+.whatsapp:hover { background: #25d366; box-shadow: 0 0 20px #25d366; }
+
+.tarjeta-red:hover {
+    transform: scale(1.03);
+}
+
+/* --- ESTILO DEL LOGO BTPI (Imagen pequeña del header) --- */
+.contenedor-logo-head {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo-btpi-small {
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+    transition: 0.3s;
+}
+
+.logo-btpi-small:hover {
+    filter: drop-shadow(0 0 15px #ce1126);
+    transform: scale(1.05);
+}
+
+/* --- CONFIGURACIÓN DE GALERÍA MASIVA (Rectificado) --- */
+
+.contenedor-galeria-pro {
+    display: grid;
+    /* Crea columnas más pequeñas para que quepan más fotos por fila */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px; /* Espacio más ajustado para que se vea compacto */
+    padding: 20px;
+}
+
+.foto-galeria {
+    width: 100%;
+    height: 200px; /* Tamaño un poco más pequeño para soportar cantidad */
+    object-fit: cover;
+    border-radius: 10px; /* Bordes un poco menos redondeados para estilo técnico */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    filter: grayscale(30%); /* Efecto visual: un poco de gris al inicio */
+}
+
+/* EFECTO CUANDO PASAS EL MOUSE */
+.foto-galeria:hover {
+    transform: scale(1.1) z-index(5);
+    filter: grayscale(0%) brightness(1.2); /* Se pone a todo color y brilla */
+    border-color: #ce1126; /* Brillo Rojo Micheletti */
+    box-shadow: 0 0 20px rgba(206, 17, 38, 0.8);
+    cursor: zoom-in;
+}
+
+/* Efecto de carga suave para que no se trabe el navegador */
+.foto-galeria {
+    animation: aparecer 0.8s ease-out;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animación de entrada para el cuerpo de la página */
+body {
+    animation: fadeInPage 0.8s ease-in-out;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto dinámico para las tarjetas al pasar el mouse */
+.tarjeta-clase-pro, .tarjeta-cristal, .tarjeta-docente {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.tarjeta-clase-pro:hover, .tarjeta-cristal:hover, .tarjeta-docente:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 15px 30px rgba(206, 17, 38, 0.4); /* Brillo rojo sutil */
+    filter: brightness(1.1);
+}
+
+/* Transición suave para los enlaces del menú */
+nav ul li a {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ce1126;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* --- PORTAL ESTILO ELITE 12-1 --- */
+#portal-negro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Evita que el texto toque los bordes en celular */
+    box-sizing: border-box;
+    transition: transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.logo-portal {
+    width: clamp(120px, 20vw, 180px); /* Tamaño responsivo */
+    filter: drop-shadow(0 0 20px #ce1126);
+    margin-bottom: 25px;
+    animation: latido 2s infinite;
+}
+
+.titulo-portal {
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+    font-size: clamp(1.8rem, 5vw, 3.5rem); /* Se ajusta solo al tamaño de pantalla */
+    letter-spacing: 8px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.subtitulo-portal {
+    color: #ce1126;
+    font-family: 'Courier New', monospace;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.boton-inicio {
+    padding: 18px 45px;
+    background: transparent;
+    color: white;
+    border: 2px solid #ce1126;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: 0.4s all;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.boton-inicio:hover {
+    background: #ce1126;
+    box-shadow: 0 0 30px #ce1126;
+    transform: translateY(-5px);
+}
+
+/* Animación de salida */
+.portal-fuera {
+    transform: translateY(-100%);
+}
+
+@keyframes latido {
+    0% { transform: scale(1); filter: drop-shadow(0 0 10px #ce1126); }
+    50% { transform: scale(1.05); filter: drop-shadow(0 0 25px #ce1126); }
+    100% { transform: scale(1); filter: drop-shadow(0 0 10px #ce1126); }
+}
